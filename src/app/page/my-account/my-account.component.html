@@ -1,0 +1,174 @@
+<div class="container-fluid">
+    <div class="align-items-center pb-lg-3 pt-lg-3 row" style="background-color: #F1F7FF;align-items: center;">
+        <div class="col-lg-1"></div>
+        <div class="col-lg-10">
+            <div class="align-items-center row">
+                <div class="col-12 col-lg-4 text-lg-left">
+                    <p class="heading-Text text-lg-start"><b>{{headerText}}</b></p>
+                </div>
+                <div class="col-lg-1"></div>
+                <div class="col-12 col-md-7 px-4 align-items-center heading-image">
+                    <img src="../../../assets/MyAccountHero.png" class="img-fluid">
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-1"></div>
+
+    </div>
+</div>
+<br><br>
+
+<!--My Participation-->
+<div class="container">
+    <div class="row align-items-center">
+        <div class="col-12 col-md-2 my-spending">
+            <h4><b>My Spending</b></h4>
+        </div>
+        <div class="col-3 d-none d-md-block"> <img src="../../../assets/GreenRibbon.png"></div>
+    </div>
+</div> <br>
+<div class="container">
+    <div class="row">
+        <div class="col-10 col-md-3">
+            <div class="card contant-center border-0" style="background-color: #B0EFFF; border-radius: 15px;height: 215px;">
+                <div class="card-body text-center">
+                    <p class="pt-lg-4"><sup class="card-dol">$</sup>
+                        <span class="card-num">130</span> <br>
+                        <span class="card-text">Account Balance</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class=" col-12 col-md-9">
+            <div class="border-0 card shadow" style=" border-radius: 15px;margin-left: 15px;">
+                <div class="card-body p-0">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-12">
+                                <h6 style="font-family: edenred;">
+                                    My Transaction History
+                                </h6>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-12">
+                            <p-table [value]="tarnsactions" id="transaction-table">
+                                <ng-template pTemplate="header">
+                                    <thead>
+                                        <th>Date</th>
+                                        <th>Mechant Name</th>
+                                        <th>Amount</th>
+                                        <th>Balance</th>
+                                    </thead>
+                                </ng-template>
+                                <ng-template pTemplate="body" let-tarnsactions>
+                                    <tbody>
+                                        <td>{{tarnsactions.TransactionDate}}</td>
+                                        <td>{{tarnsactions.merchantName}}</td>
+                                        <td>{{tarnsactions.Amount}}</td>
+                                        <td>{{tarnsactions.Balance}}</td>
+                                    </tbody>
+                                </ng-template>
+                            </p-table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<br><br>
+<!--My Debit Card-->
+<div class="container">
+    <div class="row align-items-center">
+        <div class="col-12 col-md-3 my-debit-card">
+            <h4><b>My Debit Card</b></h4>
+        </div>
+        <div class="col-3 d-none d-md-block"> <img src="../../../assets/PinkRibbon.png"></div>
+    </div>
+    <div class="row  mt-lg-4">
+        <div class="col-md-4">
+            <div class=" border-0 shadow" style="background-color:#711CFF;border-radius: 10px;">
+                <div class="row card-body" style="align-items: center;">
+                    <div class="col-6 col-lg-5">
+                        <img src="../../../assets/LostStolenIcon.png" class="w-100">
+                    </div>
+                    <div class="col-6 col-lg-7">
+                        <p class="card-text h4" style="color: white;">Report Lost <br>or Stolen Card</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="border-0 shadow" style="background-color:#FF5978; border-radius: 10px;">
+                <div class="row card-body" style="align-items: center;">
+                    <div class="col-6 col-mg-7 col-lg-5">
+                        <img class="w-100" src="../../../assets/DigitalWalletIcon.png">
+                    </div>
+                    <div class="col-6 col-mg-5 col-lg-7">
+                        <p class="card-text h4" style="color: white;">Manage <br>Digital Wallet</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="border-0 shadow" style="background-color:#00A184; border-radius:10px;">
+                <div class="row card-body" style="align-items: center;">
+                    <div class="col-6 col-mg-7 col-lg-5">
+                        <img class="w-100" src="../../../assets/PINIcon.png">
+                    </div>
+                    <div class="col-6 col-mg-5 col-lg-7">
+                        <p class="card-text h4" style="color: white;">View/Change<br> Pin</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<br><br>
+
+
+<!--My Reimbursement-->
+<div class="container">
+    <div class="row align-items-center">
+        <div class="col-12 col-lg-3">
+            <h4><b>My Reimbursement</b></h4>
+        </div>
+        <div class="col-3 col-lg-9 d-lg-block d-none ps-lg-0"> <img src="../../../assets/PurpleRibbon.png"></div>
+    </div>
+
+
+
+
+    <div class="row justify-content-between  mb-lg-5">
+        <div class="col-12 col-md-3 border-0 shadow  m-3 p-4" style="border-radius: 15px;">
+            <div class="row text-center align-items-center  justify-contant-center">
+                <div class="col-12"><img src="../../../assets/ClaimFormIcon.png" class="w-50">
+                    <p class="">File a claim to get<br> reimbursed for your<br> purchase</p>
+                    <a class="border-0 btn btn-primary p-2 pe-5 ps-5 rounded-pill" href="#/claimForm">Reimburse Me</a>
+                    <!-- <button type="button"  class="btn btn-primary p-2 rounded-pill">Reimburse Me</button> -->
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-3  border-0 shadow m-3 p-4" style="border-radius: 15px !important;">
+            <div class="row text-center align-items-center ">
+                <div class="col-12"><img src="../../../assets/StatusIcon.png" class="w-50">
+                    <p class="">See the status<br> of your pending <br>and past claims</p>
+                    <button type="button" class="border-0 btn btn-primary p-2 pe-5 ps-5 rounded-pill">My Claims</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-3 shadow border-0 m-3 p-4" style="border-radius: 15px !important;">
+            <div class="row align-items-center justify-contant-center ">
+                <div class="col-12 text-center">
+                    <img src="../../../assets/PurseIcon.png" class="w-50">
+                    <p class="text-center">Add your <br>reimbursement and <br> payment information</p>
+                    <button type="button" class="border-0 btn btn-primary p-2 pe-4 ps-4 rounded-pill">Reimbursement
+                        Method</button>
+
+                </div>
+            </div>
+        </div>
+
+    </div>

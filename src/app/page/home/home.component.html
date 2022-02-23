@@ -1,0 +1,264 @@
+<div class="container-fluid">
+    <div class="align-items-center header pb-lg-3 pt-lg-3 row" style="background-color: #F1F7FF">
+        <div class="col-12 col-md-6">
+            <h1 class="text-center" style="color: black;"><b>{{headerText}}</b></h1>
+        </div>
+        <div class="col-12 col-md-6">
+            <img src="../../../assets/LSAHomeHero.png" class="w-100">
+        </div>
+    </div>
+</div>
+
+<br>
+<div class="container">
+    <div class="row align-items-center">
+        <div class="col-12 col-md-3 margin">
+            <h4><b>My Participation</b></h4>
+        </div>
+        <div class="col-3 d-none d-md-block"> <img src="../../../assets/GreenRibbon.png"></div>
+    </div>
+</div>
+
+<div class="container py-3">
+    <div class="row ">
+        <div class="col-10 col-md-4">
+            <div class="card border-0" style="background-color: #711CFF; border-radius: 15px;">
+                <div class="align-items-center p-lg-3 row">
+                    <div class="col-2 participation-card-image text-center">
+                        <img src="../../../assets/EnrolledIcon.png" class="img-fluid">
+                    </div>
+                    <div class="col-8 ps-lg-0">
+                        <p class="h4 text-white">Enrolled</p>
+                    </div>
+                    <div class="col-12 text-end ">
+                        <span class="text-white">
+                            Unenroll <i class="fas fa-chevron-right"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-10 col-md-4" id="employer-contribution">
+            <div class="border-0 card p-lg-3" style="background-color: #FF5978; border-radius: 15px;">
+                <div class="row align-items-center">
+                    <div class="col-md-5 text-center">
+                        <p> <sup id="cd-2-doll">$</sup>
+                            <span id="cd-2-num">75</span>
+
+                        </p>
+                        <p><span class="cd-2-text2">Per Month</span></p>
+                    </div>
+                    <div class="col-md-7">
+                        <p class="h4"> <span>Employer Contributions</span></p>
+                    </div>
+                    <!-- <div class="col-12" id="Per-Month">
+                    <p class="mx-4"><span class="cd-2-text2">Per Month</span></p>
+                </div> -->
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-4 participation-card">
+            <div class="border-0 card p-lg-3" style="background-color: #00A184; border-radius: 15px;height: 133px;">
+                <div class="align-items-center row text-white pt-lg-2">
+                    <div class="col-2 participation-card-image text-center">
+                        <img src="../../../assets/FitnessBadge.png" class="w-100">
+                    </div>
+                    <div class="col-8">
+                        <p>You've earned a badge!</p>
+
+                        <span class="h4">
+                            Fitness Boss
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="container py-5">
+            <div class="row align-items-center mb-4">
+                <div class="col-12 col-md-3 margin">
+                    <h4><b>My Lifestyle Card</b></h4>
+                </div>
+                <div class="col-3 d-none d-md-block"> <img src="../../../assets/PinkRibbon.png"></div>
+                <div class="col-lg-6 text-lg-right pe-lg-0 text-lg-end">
+                    <a href="#/MyAccount" style="color: #0d8aff;text-decoration: none;font-weight: 500;">Manage My Account ></a>
+                </div>
+            </div>
+            <div class="row justify-content-center justify-content-md-between  mx-0">
+                <div class="col-12 col-md-6">
+                    <div class="Card-Balance-header border-0 me-md-2 pb-lg-3 pt-lg-3 row shadow"
+                        style="border-radius: 15px !important;">
+                        <div class="col-12 col-lg-4">
+                            <div class="row">
+                                <div class="col-12 text-center">
+                                    <div class="card-text-container text-align-center">
+                                        <p>
+                                            <span class="card-balance-text">Card Balance</span><br> <sup
+                                                class="card-balance-dol">$</sup><span
+                                                class="card-balance-num">130</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-10 ms-4">
+                                <hr>
+                            </div>
+                            <div class="col-12 reloaded-on text-center ">
+
+                                <p><span class="reloaded-on-text">Reloaded on</span>
+                                    <br>
+                                    <span class=" reloaded-date" style="color: #00a084;">Jan 8</span>
+                                </p>
+
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-8">
+                            <div class="row">
+                                <div class="col-12 mb-lg-2">
+                                    <span style="font-family: edenred;">
+                                        My Transaction History
+                                    </span>
+                                </div>
+                            </div>
+                            <p-table [value]="transactions" id="graph-table" style="margin-top: 10px;">
+                                <ng-template pTemplate="header">
+                                    <thead>
+                                        <th>Date</th>
+                                        <th>Merchant</th>
+                                        <th>Amount</th>
+                                    </thead>
+                                </ng-template>
+                                <ng-template pTemplate="body" let-product>
+                                    <tbody>
+                                        <td>{{product.TransactionDate}}</td>
+                                        <td>{{product.merchantName}}</td>
+                                        <td>{{product.Amount}}</td>
+                                    </tbody>
+                                </ng-template>
+                            </p-table>
+                        </div>
+
+                    </div>
+
+
+                </div>
+                <div class="col-11 col-md-6 ">
+                    <div class="Card-Balance-header border-0 me-md-2 pb-lg-3 pt-lg-3 row shadow"
+                        style="border-radius: 15px !important;">
+                        <div class="col-lg-6">
+                            <h6 style="font-family: edenred;">
+                                How I'm Spending My Benefits
+                            </h6>
+                            <div class="row" style="align-items: center; margin-top: 20px !important;">
+                                <div class="col-2">
+                                    <i class="fa fa-circle" aria-hidden="true"
+                                        style="color: #00A184; font-size: 30px;"></i>
+                                </div>
+                                <div class="col">
+                                    <h6><b>75%</b> <br>post tax Spending</h6>
+                                </div>
+
+                            </div>
+                            <div class="row" style="align-items: center; margin-top: 20px !important;">
+                                <div class="col-2">
+                                    <i class="fa fa-circle" aria-hidden="true"
+                                        style="color: #FF5978; font-size: 30px;"></i>
+                                </div>
+                                <div class="col">
+                                    <h6><b>25%</b> <br>pre tax spending</h6>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-lg-6" style="float: right;">
+                            <div class="chart-wrapper" style="max-width: 210px; width: 100%;">
+                                <canvas baseChart [datasets]="pieChartData" [type]="pieChartType"
+                                    [options]="pieChartOptions" [legend]="pieChartLegend">
+                                </canvas>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+        <div class="container" id="whereToUseLifestyleCard">
+            <div class="row align-items-center">
+                <div class="col-12 col-md-5">
+                    <h4><b>Where Can I Use My Lifestyle Card?</b></h4>
+                </div>
+                <div class="col-3 d-none d-md-block"> <img src="../../../assets/PurpleRibbon.png"></div>
+                <div class="col-4 d-none d-md-block text-lg-end"><a href="#"
+                        style="color: #0d8aff;text-decoration: none;font-weight: 500;">See All ></a></div>
+            </div>
+
+            <div class="row">
+                <p-carousel orientation="horizontal" [value]="lifeStyleCard" styleClass="custom-carousel" [numVisible]="3" [numScroll]="1"
+                    [circular]="false" [autoplayInterval]="2500" [responsiveOptions]="responsiveOptions" [showIndicators]="false" [showNavigators]="true">
+                    <ng-template pTemplate="header">
+                    </ng-template>
+                    <ng-template let-product pTemplate="item">
+                        <div class="product-item">
+                            <div class="product-item-content">
+                                <div class="p-mb-3">
+                                </div>
+                                <div>
+                                    <!-- <h4 class="p-mb-1">{{product.name}}</h4>
+                        <h6 class="p-mt-0 p-mb-3">${{product.price}}</h6>
+                        <span [class]="'product-badge status-'+product.inventoryStatus.toLowerCase()">{{product.inventoryStatus}}</span>
+                        <div class="car-buttons p-mt-5">
+                            <p-button type="button" styleClass="p-button p-button-rounded p-mr-2" icon="pi pi-search"></p-button>
+                            <p-button type="button" styleClass="p-button-success p-button-rounded p-mr-2" icon="pi pi-star"></p-button>
+                            <p-button type="button" styleClass="p-button-help p-button-rounded" icon="pi pi-cog"></p-button>
+                        </div> -->
+                                    <div class="col">
+                                        <div class="card border-0 shadow text-center p-4"
+                                            style="height: 100%; width: 18rem;background-color: transparent; border-radius: 10px;">
+                                            <div class="card-body">
+                                                <img src='{{"../../../assets/"+ product.image}}' style="height: 100px;"
+                                                    class="center">
+                                                <p class="card-text mt-3" style="text-align: center">
+                                                    <b>{{product.name}}</b>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </ng-template>
+                </p-carousel>
+            </div>
+
+        </div>
+        <br>
+        <br>
+
+
+        <div class="container-fluid" id="partnerCatalog">
+            <div class="align-items-center row">
+                <div class="col-12 col-md-6">
+                    <div class="font-size font-weight">
+                        <p >
+                            <span id="par_catalog">Partner Catalog</span><br>
+                            Get access to Edenred pricing with our <br>
+                            exclusive partner discounts.
+                        </p>
+
+
+                        <button class="btn btn-primary mt-2 pe-4 ps-4 rounded-pill" type="button">Find a Discount</button>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 ">
+                    <img src="../../../assets/ParnerLogosCollage.png" alt="partnerCatalog" class="w-100">
+                </div>
+            </div>
+        </div>

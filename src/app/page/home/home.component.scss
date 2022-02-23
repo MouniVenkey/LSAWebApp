@@ -1,0 +1,389 @@
+
+@import "../../common/Global.scss";
+
+:host {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+      font-size: 14px;
+      color: #333;
+      box-sizing: border-box;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+  
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      margin: 8px 0;
+    }
+  
+    p {
+      margin: 0;
+    }
+  
+    .spacer {
+      flex: 1;
+    }
+  
+  
+  ngb-carousel {
+      max-width: 200px;
+      margin: 50px auto;
+  }
+  
+  ngb-carousel img {
+      width: 100%;
+      outline: none;
+  }
+  
+  ngb-carousel {
+      width: inherit;
+      height: inherit;
+  }
+  
+  .carousel-inner {
+      overflow: visible;
+  }
+  
+  .carousel-item {
+      display: flex !important;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 1.2s ease-in-out, visibility 1.2s;
+      z-index: -1;
+  }
+  
+  .carousel-item.active{
+      opacity: 1;
+      visibility: visible;
+      z-index: 10;
+  }
+  
+  .carousel-control-prev {
+       z-index: 20;
+  }
+  
+  
+  .carousel-control-next {
+       z-index: 20;
+  }
+  
+  .carousel-indicators{
+      z-index: 20;
+  }
+
+  .card-dimesnion{
+    height: 125px; 
+    width: 300px;
+    border-radius: 15px;
+    font-family: ubuntu;
+    justify-content: center;
+    margin:auto;
+  }
+  .card-dimension-text{
+    color:$ColdWhite;
+  }
+
+/*  CARD-DIMENTION_1  */
+  .card-dimesnion #cd-1-p{
+    
+    display:inline inline-block;
+    position: absolute;
+    right:0px;
+    bottom:0px;
+    color:$ColdWhite;
+    padding:10px;
+  }
+
+  .card-dimesnion #cd-1{
+    font-size: 1.5rem;
+  }
+
+  /*  CARD-DIMENTION_2  */
+  .card-dimesnion #cd-2-doll{
+    font-size: 2rem;
+    margin-top:0px;
+  }
+  .card-dimesnion #cd-2-num
+  {
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  .card-dimesnion #cd-2-text1{
+    font-size: 0.8rem;
+   position: absolute;
+   bottom: 15px;
+   left:20px; 
+  }
+  .card-dimesnion #cd-2-text2{
+    color:white;
+    font-size: 1rem;
+    padding:10px 20px;
+  }
+
+ /*  CARD-DIMENTION_3  */
+
+ .card-dimesnion #cd-3-text1{
+   font-size: 0.7rem;
+   position: absolute;
+   top:30%;
+   right:15%
+ }
+ .card-dimesnion #cd-3-text2{
+  font-size: 1rem;
+  position: absolute;
+  top:40%;
+  right:20%;
+  padding:10px;
+}
+
+#myParticipation{
+  color:$Black;
+}
+
+
+#partnerCatalog{
+  padding:30px;
+}
+#partnerCatalog_P {
+  margin-left: 15%;
+  margin-top: 15%;
+}
+#par_catalog{
+  font-size: 1.5rem;
+}
+.discount{
+  margin-left: 15%;
+  height:4%;
+  padding:5px;
+  border-radius: 20px;
+}
+
+  .lifestyle-card-dimesnion{
+    height: 100%; 
+    width: 100%;
+  }
+
+.font-size{
+  font-size: 18px;
+}
+
+
+.font-weight{
+  font-weight: 800;
+}
+
+.product-item{
+  .product-item-content {
+      border: 1px solid var(--surface-d);
+      border-radius: 3px;
+      margin: .3rem;
+      text-align: center;
+      padding: 2rem 0;
+  }
+
+  .product-image {
+      width: 50%;
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23)
+  }
+}
+
+
+
+
+
+
+
+    /* Responsive Styles */
+    @media screen and (max-width: 767px) {
+      .card-container > *:not(.circle-link) ,
+      .terminal {
+        width: 100%;
+      }
+  
+      .card:not(.highlight-card) {
+        height: 16px;
+        margin: 8px 0;
+      }
+  
+      .card.highlight-card span {
+        margin-left: 72px;
+      }
+    }
+  
+    @media screen and (max-width: 575px) {
+      svg#rocket-smoke {
+        display: none;
+        visibility: hidden;
+      }
+    }
+
+   #graph-table table thead th {
+      width: 20% !important;
+    }
+
+
+
+    .card-text-container{
+      .card-balance-text{
+        font-size: 1rem;
+      }
+      .card-balance-dol{
+        font-size: 2rem;
+        font-weight: bolder;
+        color:$Violet
+      }
+      .card-balance-num{
+        font-size: 3.5rem;
+        font-weight: bolder;
+        color:$Violet
+      }
+    }
+
+    #employer-contribution{
+      border-radius: 15px;
+      color:$ColdWhite;
+     
+      #cd-2-doll{
+        font-size: 2rem;
+        font-weight:800;
+        text-align: center;
+      }
+      #cd-2-num{
+        font-size: 54px;
+        font-weight: bold; text-align: center;
+      }
+      .cd-2-text1{
+        font-size: 1rem;
+      }
+      .cd-2-text2{
+        font-size: 14px;
+      }
+      
+    }
+
+
+
+
+
+    
+
+
+    .text-container {
+      transform: translateY(-20px);
+
+    }
+    .reloaded-on{
+      font-size: 1rem;
+     
+     
+    }
+    .reloaded-on .text-container{
+      transform: translateY(-10px);
+    }
+    .reloaded-date{
+      font-size: 2rem;
+      font-weight:bold;
+    }
+
+
+    .participation-card {
+      border-radius: 20px;
+      color:$ColdWhite;
+      .title {
+      font-size: 1rem;
+      }
+    }
+
+    
+    .Card-Balance-header {
+      
+      box-shadow: 0 0 5px gray;
+    }
+
+    #graph-table td {
+      border-bottom: 1px solid rgba(128, 128, 128, 0.452);
+      width: 115px  !important;
+    }
+    #graph-table tr:last-child td {
+      border-bottom: 0px solid grey;
+      width: 100% !important;
+    }
+
+    #graph-table thead th {
+      width: 115px !important;
+    }
+
+    
+
+
+   .participation-card-image{
+  
+    width: 30%!important;
+  }
+ 
+
+
+    @media (min-width: 768px){
+      
+    .margin {
+    flex: 0 0 auto;
+    width: 21%;
+    }
+   
+}
+  
+
+    @media (max-width: 800px){
+      .participation-card {
+        flex: 0 0 auto;
+        width: 75%;
+        }
+    }
+
+    @media (max-width: 800px){
+      #employer-contribution {
+        width: 75%;
+        }
+        
+        .employer-contribution-text{
+        padding-left:0.25rem
+      }
+      #Per-Month{
+        transform: translate(2px, -30px);
+      }
+    }
+
+    @media (max-width: 1440px){
+        .employer-contribution-text{
+        padding-left:0px;
+        font-size:0.8rem;
+       
+      }
+      #Per-Month{
+        transform: translate(22px, -10px);
+      }
+    }
+
+      @media (min-width: 1440px){
+        .employer-contribution-text{
+        padding-left:0px;
+        font-size:0.8rem
+      }
+      #Per-Month{
+        transform: translate(20px, -27px);
+      }
+    }
+    // .ui-carousel-dots-container{
+    //   display: none !important;
+    //   }
+    //   .p-carousel-indicators{
+    //     display: none !important;
+    //   }
+      
+   
+    .pi-chevron-left:before {
+      content: "\e900";
+  }

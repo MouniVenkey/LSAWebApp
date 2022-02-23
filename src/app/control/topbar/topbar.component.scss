@@ -1,0 +1,84 @@
+@import "../../common/Global.scss";
+@import "~bootstrap/scss/_functions.scss";
+@import "~bootstrap/scss/_variables.scss";
+@import "~bootstrap/scss/mixins/_breakpoints.scss";
+
+.logo-area,
+.search-area,
+.edenred-header {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.edenred-logo {
+  width: auto;
+  max-height: 54px;
+}
+.edenred-header {
+  display: flex;
+  flex-direction: column;
+  min-height: 85px;
+  justify-content: center;
+}
+.search-area {
+  select {
+    border: 0;
+    outline: 0;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    font-size: 13px;
+  }
+  .icon-container {
+    margin: 0 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid $Border;
+    border-radius: 28px;
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+    i {
+      color: $Border;
+    }
+  }
+  .search-main {
+    gap: 8px;
+    @include media-breakpoint-up(md) {
+      gap: 30px;
+    }
+  }
+}
+.search-box {
+  border: 1px solid $Border;
+  border-radius: 31px;
+  min-height: 31px;
+  min-width: 212px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: $White;
+  overflow: hidden;
+  input,
+  button {
+    padding: 0 12px;
+    margin: 0;
+    border: 0;
+    outline: 0;
+    font-size: 13px;
+    height: 100%;
+    max-height: 29px;
+    color: $Border;
+    background-color: transparent;
+  }
+  input {
+    color: $Black;
+    &::placeholder {
+      color: $Border;
+    }
+  }
+}
+.form-control:focus{
+  box-shadow: none !important;
+  outline: none !important;
+}

@@ -1,0 +1,19 @@
+@import "../../common/Global.scss";
+
+.header{
+    background-color: #F1F7FF;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    object-fit: cover;
+    object-position: 100% 100%;
+    padding:30px
+
+}
+
+.text-center{
+   text-align: center;
+    font-weight: 900;
+    font-size: 55px;
+}

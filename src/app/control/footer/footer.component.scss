@@ -1,0 +1,31 @@
+@import "../../common/Global.scss";
+
+.footer {
+  background-color: $Gray;
+  .copy-right-band {
+    min-height: 53px;
+    display: flex;
+    align-items: center;
+    background-color: $Black;
+    color: $ColdWhite;
+    font-size: 16px;
+    line-height: 1;
+    font-weight: 500;
+  }
+  .footer-top {
+    padding: 8px 0 32px;
+  }
+  .footer-bottom {
+    padding-top: 32px;
+    color: $White;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .footer-logo {
+    padding: 48px 0;
+    img {
+      width: auto;
+      max-height: 78px;
+    }
+  }
+}

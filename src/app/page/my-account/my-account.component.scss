@@ -1,0 +1,122 @@
+@import "../../common/Global.scss";
+.heading{
+    padding: 3.5rem!important;
+  }
+.heading-Text{
+    font-weight:900;
+    font-size:xx-large;
+    font-family: edenred;
+  }
+
+  
+  .font-size{
+    font-size: 18px;
+  }
+  .card-body{
+    .card-dol{
+font-size: x-large;
+font-weight: bolder;
+    }
+    .card-num{
+      font-weight: bolder;
+font-size: 3.4rem;
+    }
+//     .card-text{
+// font-size: 1rem;
+//     }
+  }
+  
+  
+  .font-weight{
+    font-weight: 800;
+  }
+  .card-dimesnion{
+    height: 125px; 
+    width: 300px;
+  }
+  .card {
+      display: flex;
+    box-shadow: 0 0 10px 0 rgba(100, 100, 100, 0.26);
+  
+  }
+
+  .content-center{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+#transaction-table{
+  width: 100% !important;
+}
+#transaction-table thead th {
+  width: 190px !important;
+}
+
+#transaction-table tbody td {
+  border-bottom: 1px solid rgba(128, 128, 128, 0.452);
+  width: 190px !important;
+}
+
+#transaction-table tr:last-child td {
+  border-bottom: 0px solid grey;
+  width: 100% !important;
+}
+
+
+
+///   --@media--
+
+
+@media only screen and(min-width: 768px){
+.my-spending {
+    flex: 0 0 auto;
+    width: 29%;
+}
+
+.my-debit-card{
+    flex: 0 0 auto;
+    width: 30%;
+}
+
+.my-reimbursement{
+  flex: 0 0 auto;
+  width: 39%;
+}
+}
+
+@media only screen and(min-width: 1024px){
+  .my-spending {
+      flex: 0 0 auto;
+      width: 22%;
+  }
+  
+  .my-debit-card{
+      flex: 0 0 auto;
+      width: 23%;
+  }
+
+  .my-reimbursement{
+    flex: 0 0 auto;
+    width: 30%;
+  }
+  }
+
+@media only screen and (min-width: 1440px){
+  .my-spending {
+      flex: 0 0 auto;
+      width: 17%;
+  }
+  .my-debit-card{
+    flex: 0 0 auto;
+    width: 18%;
+}
+.my-reimbursement{
+  flex: 0 0 auto;
+  width: 23%;
+}
+
+
+  
+}
+

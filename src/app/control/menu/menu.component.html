@@ -1,0 +1,29 @@
+<nav class="navbar navbar-expand-sm bg-navbar">
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="true" aria-label="Toggle navigation">
+    <i class="fas fa-bars"> </i>
+  </button>
+  <div class="container">
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav me-auto ">
+        <li class="nav-item">
+          <a class="nav-link"  [class.active]="router.url==='/'" routerLinkActive="'active-link'" href="">My Dashboard</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " [class.active]="router.url==='/MyAccount'"  href="#/MyAccount">My Account</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link " href="javascript:void(0)">Discounts</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link " [class.active]="router.url==='/RoundUpForChange'" href="#/RoundUpForChange">Round Up For Change</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link " href="javascript:void(0)">Support</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+

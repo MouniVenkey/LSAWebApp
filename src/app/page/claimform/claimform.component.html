@@ -1,0 +1,183 @@
+<div class="container-fluid">
+    <div class="row header align-items-center justify-content-center" style="background-color: #F1F7FF;">
+        <div class="col-lg-1"></div>
+        <div class="col-lg-10">
+            <div class="row">
+                <!-- <div class="col-12 col-md-12">
+                    <h1 class="col-lg-6 text-left" style="position: relative;top: 30%;">{{headerText}}</h1>
+                    <p style="position: relative;top: 30%;" class=" h6">Submit a request to get reimbursed for your
+                        lifestyle purchases.</p>
+                    <img src="../../../assets/ClaimBackground.png" class="w-100">
+                </div> -->
+                <section class="align-items-center h6 no-gutters ps-lg-0 row">
+                    <div class="col-12 text-left d-flex ps-lg-0">
+                        <img class="img-fluid of" src="../../../assets/ClaimBackground.png">
+                        <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);"
+                            aria-label="breadcrumb" class="mt-lg-4 position-absolute">
+                            <ol class="breadcrumb mt-lg-2">
+                                <li class="breadcrumb-item"><a href="#/MyAccount">My Account</a></li>
+                                <li class="breadcrumb-item active font-weight text-dark" aria-current="page">Submit a
+                                    claim</li>
+                            </ol>
+                        </nav>
+                        <!-- <nav aria-label="breadcrumb" class="mt-lg-4 position-absolute" style="--bs-breadcrumb-divider: '>';">
+                            <ol class="breadcrumb">
+                              <li class="breadcrumb-item"><a href="#">My Account</a></li>
+                              <li class="breadcrumb-item active font-weight text-dark" aria-current="page">Submit a claim</li>
+                            </ol>
+                          </nav> -->
+                        <h4 class="col-lg-5 h1 mr-5 mt-4 mt-5 position-absolute pr-5 text-black font-weight pt-lg-4">
+                            {{headerText}} <br>
+                            <span class="font-weight h6">Submit a request to get reimbursed for your lifestyle
+                                purchases.</span>
+                        </h4>
+                        <!-- <p style="position: relative;top: 30%;" class=" h6"></p> -->
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div class="col-lg-1"></div>
+
+    </div>
+</div>
+
+<br>
+<div class="container">
+    <div class="mt-lg-3 row mb-lg-4">
+        <div class="col-4 col-md-4" style="border: 1px solid #0d6efd;
+        
+        border-radius: 50px;">
+            <div class="align-items-center mt-4 mx-0 row">
+                <div class="col-3">
+                    <img class="img-fluid" src="../../../assets/QuestionIcon.png">
+                </div>
+                <div class="col-8">
+                    <h4>Helpful Tips</h4>
+
+                </div>
+            </div>
+            <div class="mt-lg-3 mx-0 row">
+                <div class="col-12">
+                    <ul class="ps-lg-3 font-weight">
+                        <li>You will need to submit a new claim for each reimbursement you wish to receive. </li>
+                        <li class="mt-lg-2">Claims submitted for future dates will not be approved.</li>
+                        <li class="mt-lg-2">You can choose to be reimbursed via your bank account or your pay pal
+                            account.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-1"></div>
+        <div class="col-8 col-md-7">
+            <div class="row">
+                <div class="col-6">
+                    <div class="did-floating-label-content">
+                        <input class="did-floating-input" type="date" placeholder=" ">
+                        <label class="did-floating-label">Claim Date</label>
+                    </div>
+                    <!-- <div class="form-floating mb-3">
+                        <input type="text" class="form-control rounded-pill" placeholder="Claim Date" id="claimDate">
+                        <label for="claimDate">Claim Date</label>
+                        <i class="fa fa-calendar form-control-feedback"></i>
+                        
+                    </div> -->
+                </div>
+                <div class="col-6">
+                    <div class="did-floating-label-content">
+                        <input class="did-floating-input" type="text" placeholder=" ">
+                        <label class="did-floating-label">Claim Amount</label>
+                    </div>
+                    <!-- <div class="form-floating mb-3">
+                        <input type="text" class="form-control rounded-pill" placeholder="Claim Amount"
+                            id="claimAmount">
+                        <label for="claimAmount">Claim Amount</label>
+                    </div> -->
+                </div>
+                <div class="col-5">
+                    <div class="input-group mb-3">
+                        <button class="btn btn-primary pe-lg-3 ps-3 ps-lg-3" type="button" style="border-top-left-radius: 25px;
+                        border-bottom-left-radius: 25px;">Direct Deposit</button>
+                        <button class="btn btn-outline-secondary pe-lg-3 ps-3 ps-lg-3" style="border-top-right-radius: 25px;
+                        border-bottom-right-radius: 25px; border-color: #0d6efd; color: black;"
+                            type="button">PayPal</button>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <!-- <div class="form-floating mb-3">
+                        <input type="text" class="form-control rounded-pill" placeholder="Bank Name" id="bankName">
+                        <label for="bankName">Bank Name</label>
+                    </div> -->
+                    <div class="did-floating-label-content">
+                        <input class="did-floating-input" type="text" placeholder=" " id="bankName">
+                        <label class="did-floating-label" for="bankName">Bank Name</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <!-- <input type="text" class="form-control rounded-pill" placeholder="Account Holder's Name"
+                            id="accountHolderName">
+                        <label for="accountHolderName">Account Holder's Name</label> -->
+                        <div class="did-floating-label-content">
+                            <input class="did-floating-input" type="text" placeholder=" " id="accountHolderName">
+                            <label class="did-floating-label" for="accountHolderName">Account Holder's Name</label>
+                        </div>
+                    </div>
+
+                    <div class="form-floating mb-3">
+                        <!-- <input type="text" class="form-control rounded-pill" id="accountNumber"
+                            placeholder="Account Number" />
+                        <label for="accountNumber">Account Number</label> -->
+                        <div class="did-floating-label-content">
+                            <input class="did-floating-input" type="text" placeholder=" " id="accountNumber">
+                            <label class="did-floating-label" for="accountNumber">Account Holder's Name</label>
+                        </div>
+                    </div>
+
+                    <!-- <div class="input-group mb-3">
+                        <div class="dropdown mr-1">
+                            <button type="button" class="btn btn-secondary rounded-pill dropdown-toggle"
+                                id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false" data-offset="10,20">
+                                Account Type
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </div>
+                    </div> -->
+                    <div class="did-floating-label-content did-error-input">
+                        <select class="did-floating-select" onclick="this.setAttribute('value', this.value);" value="">
+                            <option value=""></option>
+                            <option value="1">Savings Account</option>
+                            <option value="2">Salary Account</option>
+
+                        </select>
+                        <label class="did-floating-label">Account Type</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <!-- <input type="text" class="form-control rounded-pill" id="routingNumber"
+                            placeholder="Routing Number" />
+                        <label for="routingNumber">Routing Number</label> -->
+                        <div class="did-floating-label-content">
+                            <input class="did-floating-input" type="text" placeholder=" " id="routingNumber">
+                            <label class="did-floating-label" for="routingNumber">Routing Number</label>
+                        </div>
+                    </div>
+                    <div class="input-group mb-3">
+                        <!-- <div><label style="font-weight: 500;font-family: 'Ubuntu';font-size: 14px;">Upload Reciept</label></div>
+                        <input type="file" class="mt-2" style="font-weight: 500;" /> -->
+
+                        <input type="file" class="form-control" id="inputGroupFile02">
+
+                    </div>
+                    <div class="col-5">
+                        <div class="input-group mb-3">
+                            <button class="border-0 btn btn-primary p-2 pe-4 ps-4 rounded-pill mt-lg-3"
+                                type="button">Submit My Claim</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

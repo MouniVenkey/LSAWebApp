@@ -1,0 +1,39 @@
+$Red: #f72717;
+$Pink: #ff5978;
+$Lightpink: #fed0c8;
+$ColdWhite: #f1f7ff;
+$Cobalt: #0d8aff;
+$LightCobalt: #b0efff;
+$Violet: #711cff;
+$LightViolet: #c8c3ff;
+$Mint: #00a184;
+$LightMint: #98f6db;
+$Olive: #739a00;
+$LightOlive: #dcf691;
+$Black: #000000;
+$Gray: #6d7787;
+$LightGray: #d5d8dd;
+$Border: #aaaaaa;
+$White: #fff;
+h1,
+h2,
+h3,
+h4 {
+  font-family: edenred;
+  color: black;
+}
+@font-face {
+  font-family: edenred;
+  src: url(https://lsajsondata.blob.core.windows.net/data/edenred.otf) format("opentype");
+}
+body,
+h5,
+h6,
+p,
+li {
+  font-family: ubuntu;
+}
+
+.nav-link:active {
+  border-bottom: 1px solid black;
+}
