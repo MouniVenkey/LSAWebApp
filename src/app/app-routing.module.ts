@@ -12,13 +12,17 @@ import { RoundUpForChangeComponent } from './page/round-up-for-change/round-up-f
 import { ClaimformComponent } from './page/claimform/claimform.component';
 import { NgChartsModule } from 'ng2-charts';
 import { DataTablesModule } from "angular-datatables";
+import { DiscountsComponent } from './page/discounts/discounts.component';
+import { SpendingComponent } from './page/spending/spending.component';
 
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'MyAccount', component: MyAccountComponent },
   { path: 'RoundUpForChange', component: RoundUpForChangeComponent },
-  { path: 'claimForm', component: ClaimformComponent }
+  { path: 'claimForm', component: ClaimformComponent },
+  {path:'Discount',component:DiscountsComponent},
+  {path:'SpendingCategories',component:SpendingComponent}
 ];
 
 @NgModule({

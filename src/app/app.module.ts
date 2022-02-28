@@ -6,11 +6,14 @@ import { AppComponent } from './app.component';
 import { ControlModule } from './control/control.module';
 import { LifeStyleCardService } from './service/lifestyle-card.service';
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
+import { LoginComponent } from './page/login/login.component';
+import { DiscountsComponent } from './page/discounts/discounts.component';
+import { SpendingComponent } from './page/spending/spending.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     ControlModule,
